@@ -1,0 +1,147 @@
+html,body,p,h1{
+  margin:0;
+  padding:0;
+}
+
+
+.page-header{
+  display: flex;
+  background-color:aquamarine;
+  text-align: center;
+  color: blue;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.page-header ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+.page-header li{
+  height: 50px;
+}
+
+.page-header a{
+  color:black;
+  height: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.page-header a:hover{
+  background-color: aqua;
+}
+
+.page-header li:first-child{
+  margin-right: auto;
+}
+
+.grid-container{
+  display: grid;
+  gap:1rem;
+  grid-template-columns: repeat(4,1fr);
+}
+
+
+.grid-container>:nth-child(1){
+  border-radius: 5px;
+  background: url('https://img.freepik.com/free-vector/gradient-international-day-education-background_23-2151120693.jpg?t=st=1746443706~exp=1746447306~hmac=39f4cd657b264014f0f516b503e11ce3b6de9cba3520a313a8cbf4ff9e425e0a&w=1380') no-repeat center center/cover;
+  font-family: 'Anton', sans-serif;
+  padding: 15px;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.glass-effect{
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.proj1-section1{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border: white solid 2px;
+  font-size: 30px;
+  color: white;
+  letter-spacing: 2px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj1-section1>img {
+  margin-right: 10px;
+}
+
+.proj1-section2{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border: white solid 2px;
+  margin-top: 15px;
+  color: white;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.proj1-section2 a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.proj1-section2 a:hover{
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+}
+
+.view-button-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.grid-container>:nth-child(2){
+  background-color: #AFDDFF;
+  grid-row: 1;
+  grid-column: 3/4;
+}
+.grid-container>:nth-child(3){
+  background-color: #FFECDB;
+}
+.grid-container>:nth-child(4){
+  background-color: #FF9149;
+  grid-column: 3/5;
+}
+.page-footer{
+  text-align: center;
+  background-color: #EFEEEA;
+  color: #547792;
+}
+  
+@media (max-width: 780px){
+  .page-header>ul{
+    display:none;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-container > :nth-child(1),
+  .grid-container > :nth-child(2),
+  .grid-container > :nth-child(3),
+  .grid-container > :nth-child(4) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+}
+
+
